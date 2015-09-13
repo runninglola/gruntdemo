@@ -85,7 +85,7 @@ module.exports = function(grunt) {
 
 	});
 
-	grunt.registerTask('default', []);
-	grunt.registerTask('buildcss',  ['sass', 'cssc', 'cssmin']);
+	grunt.registerTask('default', ['uglify', 'htmlhint','buildcss','watch']);
+	grunt.registerTask('buildcss',  ['sass','cssc','cssmin']);
 
 };
